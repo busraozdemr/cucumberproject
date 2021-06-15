@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: Web - Login
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 55.41 s <<< FAILURE! - in Web - Login
+Web - Login.Web - Login Fail Scenarios #3  Time elapsed: 10.6 s  <<< ERROR!
+org.openqa.selenium.WebDriverException: 
+Timed out waiting for driver server to shutdown.
+Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
+System info: host: 'Mac110903', ip: 'fe80:0:0:0:18ac:6a8a:e21a:ee73%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.5', java.version: '1.8.0_201'
+Driver info: driver.version: ChromiumDriver
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for http://localhost:45413/shutdown to become unavailable after 3000 ms
+Caused by: java.util.concurrent.TimeoutException
+
+Web - Login.Web - Login Fail Scenarios with fail case for report  Time elapsed: 11.45 s  <<< FAILURE!
+org.junit.ComparisonFailure: fail message should be : Hatalı giriş. expected:<Hatalı giriş.[]> but was:<Hatalı giriş.[ Lütfen kullanıcı adı ve şifrenizi kontrol edip tekrar deneyiniz.]>
+

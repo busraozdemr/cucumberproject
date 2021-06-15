@@ -1,0 +1,1048 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Extent</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c43b89d03a7c43dae8bb8f0f078bad1997af6b3b/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Grasshopper Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Jun 15, 2021 05:25:20 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Jun 15, 2021 05:25:20 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Jun 15, 2021 05:26:16 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>2</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>2</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='50%'><b>3</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='50%'><b>3</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='85%'><b>23</b> steps passed</small></div>
+<div>
+<small data-tooltip='11%'><b>3</b> steps failed,
+<b>1</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Web - Login":55.252,"Web - Added Favorite Restaurant":34.625
+};
+</script>
+<div class="row">
+<div class="col-md-4 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@login</td>
+<td>3</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>50%</td>
+</tr>
+<tr>
+<td>@myFavorite</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@web</td>
+<td>3</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>37.5%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-md-4 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>build</td>
+<td>1.1</td>
+</tr>
+<tr>
+<td>os</td>
+<td>Mac</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 2,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 3,
+failChild: 3,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 23,
+failGrandChild: 3,
+warningGrandChild: 0,
+skipGrandChild: 1,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script><div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@login</a><a class="dropdown-item" href="#">@myFavorite</a><a class="dropdown-item" href="#">@web</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag="@web @login"
+          device="">
+          <div class="test-detail">
+            <p class="name">Web - Login</p>
+            <p class="text-sm">
+              <span>17:25:21 PM</span> / <span>00:00:55:252</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Web - Login</h5>
+<span class='badge badge-success'>06.15.2021 17:25:21</span>
+<span class='badge badge-danger'>06.15.2021 17:26:16</span>
+<span class='badge badge-default'>00:00:55:252</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">@web</span>
+<span class="badge badge-pill badge-default">@login</span></div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Web - Login Success Scenario</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.login.LoginSteps.ysUserOpenTheLoginPage()">
+                <span>Given YS User open the Login Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.login.LoginSteps.ysUserTryToLogin(java.util.List<java.util.Map<java.lang.String, java.lang.String>>)">
+                <span>And YS User try to login</span>
+      <div><table class='markup-table table '><tr><td>username</td><td>password</td></tr><tr><td>busraozdmr.80@gmail.com</td><td>B.c.1993</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.login.LoginSteps.ysUserShouldLoggedIn()">
+                <span>Then YS User should logged-in</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="17"><span class="badge log fail-bg mr-2">Fail</span>Web - Login Fail Scenarios</div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="18"><span class="badge log pass-bg mr-2">Pass</span>Web - Login Fail Scenarios</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given YS User open the Login Page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And YS User try to login</span>
+      <div><table class='markup-table table '><tr><td>username</td><td>password</td></tr><tr><td>testfail</td><td>B.c.1993</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then YS User have fail message "Hatalı giriş. Lütfen kullanıcı adı ve şifrenizi kontrol edip tekrar deneyiniz." at Login Page</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="27"><span class="badge log pass-bg mr-2">Pass</span>Web - Login Fail Scenarios</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given YS User open the Login Page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And YS User try to login</span>
+      <div><table class='markup-table table '><tr><td>username</td><td>password</td></tr><tr><td>busraozdmr.80@gmail.com</td><td>testfail</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then YS User have fail message "Hatalı giriş. Lütfen kullanıcı adı ve şifrenizi kontrol edip tekrar deneyiniz." at Login Page</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="41"><span class="badge log fail-bg mr-2">Fail</span>Web - Login Fail Scenarios</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given YS User open the Login Page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And YS User try to login</span>
+      <div><table class='markup-table table '><tr><td>username</td><td>password</td></tr><tr><td>testfail</td><td>testfail</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then YS User have fail message "Hatalı giriş. Lütfen kullanıcı adı ve şifrenizi kontrol edip tekrar deneyiniz." at Login Page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>Hook.Hook.quitBrowser()</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.WebDriverException: Timed out waiting for driver server to shutdown.
+Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
+System info: host: 'Mac110903', ip: 'fe80:0:0:0:18ac:6a8a:e21a:ee73%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.5', java.version: '1.8.0_201'
+Driver info: driver.version: ChromiumDriver
+	at org.openqa.selenium.remote.service.DriverService.stop(DriverService.java:257)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:113)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:562)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:398)
+	at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:243)
+	at Hook.Hook.quitBrowser(Hook.java:36)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for http://localhost:45413/shutdown to become unavailable after 3000 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilUnavailable(UrlChecker.java:131)
+	at org.openqa.selenium.remote.service.DriverService.stop(DriverService.java:253)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:113)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:562)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:398)
+	at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:243)
+	at Hook.Hook.quitBrowser(Hook.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:59)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:110)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:71)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:199)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:405)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(FutureTask.java:205)
+	at org.openqa.selenium.net.UrlChecker.waitUntilUnavailable(UrlChecker.java:129)
+	... 42 more
+</textarea>
+      
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="50"><span class="badge log fail-bg mr-2">Fail</span>Web - Login Fail Scenarios with fail case for report</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.login.LoginSteps.ysUserOpenTheLoginPage()">
+                <span>Given YS User open the Login Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.login.LoginSteps.ysUserTryToLogin(java.util.List<java.util.Map<java.lang.String, java.lang.String>>)">
+                <span>And YS User try to login</span>
+      <div><table class='markup-table table '><tr><td>username</td><td>password</td></tr><tr><td><username></td><td><password></td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepdefinitions.login.LoginSteps.ysUserHaveFailMessageAtLoginPage(java.lang.String)">
+                <span>Then YS User have fail message "Hatalı giriş." at Login Page</span>
+      <div>
+        <textarea disabled class="code-block">org.junit.ComparisonFailure: fail message should be : Hatalı giriş. expected:<Hatalı giriş.[]> but was:<Hatalı giriş.[ Lütfen kullanıcı adı ve şifrenizi kontrol edip tekrar deneyiniz.]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at pages.login.LoginPage.checkFailMessageAs(LoginPage.java:41)
+	at stepdefinitions.login.LoginSteps.ysUserHaveFailMessageAtLoginPage(LoginSteps.java:39)
+	at ✽.YS User have fail message "Hatalı giriş." at Login Page(file:///Users/busra.ozdemir/Music/testcucumber1/src/test/resources/features/web/login.feature:33)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>Hook.Hook.tearDown(io.cucumber.java.Scenario)</span>
+      <div>
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded2.png' src="../embedded2.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="3"
+          author=""
+          tag="@web @myFavorite"
+          device="">
+          <div class="test-detail">
+            <p class="name">Web - Added Favorite Restaurant</p>
+            <p class="text-sm">
+              <span>17:25:21 PM</span> / <span>00:00:34:625</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Web - Added Favorite Restaurant</h5>
+<span class='badge badge-success'>06.15.2021 17:25:21</span>
+<span class='badge badge-danger'>06.15.2021 17:25:56</span>
+<span class='badge badge-default'>00:00:34:625</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">@web</span>
+<span class="badge badge-pill badge-default">@myFavorite</span></div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="4"><span class="badge log fail-bg mr-2">Fail</span>AddedFavoriteRestaurant - Added Favorite Restaurant Success</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.login.LoginSteps.ysUserOpenTheLoginPage()">
+                <span>Given YS User open the Login Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.login.LoginSteps.ysUserTryToLogin(java.util.List<java.util.Map<java.lang.String, java.lang.String>>)">
+                <span>And YS User try to login</span>
+      <div><table class='markup-table table '><tr><td>username</td><td>password</td></tr><tr><td>busraozdmr.80@gmail.com</td><td>B.c.1993</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.login.LoginSteps.ysUserShouldLoggedIn()">
+                <span>Then YS User should logged-in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.myfavorite.MyFavoriteSteps.ysUserCloseBanabiPopup()">
+                <span>And YS User close banabi popup</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.myfavorite.MyFavoriteSteps.ysUserChooseLocation(java.lang.String)">
+                <span>And YS User choose location "Merkez (Şirinevler Mah.)"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.myfavorite.MyFavoriteSteps.ysUserSearch(java.lang.String)">
+                <span>And YS User search "döner"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.myfavorite.MyFavoriteSteps.ysUserClickFirstRestaurant()">
+                <span>And YS User click first restaurant</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepdefinitions.myfavorite.MyFavoriteSteps.ysUserClickAddedMyFavoriteRestaurant()">
+                <span>And YS User click added my favorite restaurant</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@class='social-button favorite-button add active']"}
+  (Session info: chrome=80.0.3987.132)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
+System info: host: 'Mac110903', ip: 'fe80:0:0:0:18ac:6a8a:e21a:ee73%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.5', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: /var/folders/0r/qt7_m72n1tv...}, goog:chromeOptions: {debuggerAddress: localhost:61807}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2cd25b5896f2b8c240b2021eeae51599
+*** Element info: {Using=xpath, value=//*[@class='social-button favorite-button add active']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:332)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:379)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:312)
+	at utils.ElementUtils.onClick(ElementUtils.java:19)
+	at pages.myfavorite.MyFavoritePage.clickAddedMyFavorite(MyFavoritePage.java:51)
+	at stepdefinitions.myfavorite.MyFavoriteSteps.ysUserClickAddedMyFavoriteRestaurant(MyFavoriteSteps.java:45)
+	at ✽.YS User click added my favorite restaurant(file:///Users/busra.ozdemir/Music/testcucumber1/src/test/resources/features/my_favorite_restaurant/added_my_favorite_restaurant.feature:14)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinitions.myfavorite.MyFavoriteSteps.ysUserShouldHave(java.lang.String)">
+                <span>Then YS User should have "Favorilerden Çıkar"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>Hook.Hook.tearDown(io.cucumber.java.Scenario)</span>
+      <div>
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded1.png' src="../embedded1.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+<span class='badge log badge-danger'>3</span>
+</span>
+<p class="name">@login</p>
+<p class="duration text-sm">6 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@login</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+<span status="fail" class='badge log badge-danger'>3 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:25:21 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>Web - Login</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:25:21 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Web - Login Success Scenario</a>
+<div class="">
+<span class="badge badge-default">Web - Login.Web - Login Success Scenario</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:25:37 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='18'>Web - Login Fail Scenarios</a>
+<div class="">
+<span class="badge badge-default">Web - Login.Web - Login Fail Scenarios</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:25:45 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='27'>Web - Login Fail Scenarios</a>
+<div class="">
+<span class="badge badge-default">Web - Login.Web - Login Fail Scenarios</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:25:54 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='41'>Web - Login Fail Scenarios</a>
+<div class="">
+<span class="badge badge-default">Web - Login.Web - Login Fail Scenarios</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:26:05 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='50'>Web - Login Fail Scenarios with fail case for report</a>
+<div class="">
+<span class="badge badge-default">Web - Login.Web - Login Fail Scenarios with fail case for report</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">@myFavorite</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@myFavorite</h4>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:25:21 PM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>Web - Added Favorite Restaurant</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:25:21 PM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='4'>AddedFavoriteRestaurant - Added Favorite Restaurant Success</a>
+<div class="">
+<span class="badge badge-default">Web - Added Favorite Restaurant.AddedFavoriteRestaurant - Added Favorite Restaurant Success</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+<span class='badge log badge-danger'>5</span>
+</span>
+<p class="name">@web</p>
+<p class="duration text-sm">8 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@web</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+<span status="fail" class='badge log badge-danger'>5 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:25:21 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>Web - Login</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:25:21 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Web - Login Success Scenario</a>
+<div class="">
+<span class="badge badge-default">Web - Login.Web - Login Success Scenario</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:25:21 PM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>Web - Added Favorite Restaurant</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:25:21 PM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='4'>AddedFavoriteRestaurant - Added Favorite Restaurant Success</a>
+<div class="">
+<span class="badge badge-default">Web - Added Favorite Restaurant.AddedFavoriteRestaurant - Added Favorite Restaurant Success</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:25:37 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='18'>Web - Login Fail Scenarios</a>
+<div class="">
+<span class="badge badge-default">Web - Login.Web - Login Fail Scenarios</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:25:45 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='27'>Web - Login Fail Scenarios</a>
+<div class="">
+<span class="badge badge-default">Web - Login.Web - Login Fail Scenarios</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:25:54 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='41'>Web - Login Fail Scenarios</a>
+<div class="">
+<span class="badge badge-default">Web - Login.Web - Login Fail Scenarios</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:26:05 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='50'>Web - Login Fail Scenarios with fail case for report</a>
+<div class="">
+<span class="badge badge-default">Web - Login.Web - Login Fail Scenarios with fail case for report</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.NoSuchElementException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.NoSuchElementException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:25:53 PM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='36'>And YS User click added my favorite restaurant</a>
+<div class="">
+<span class="badge badge-default">Web - Added Favorite Restaurant.AddedFavoriteRestaurant - Added Favorite Restaurant Success.And YS User click added my favorite restaurant</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.WebDriverException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.WebDriverException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:26:02 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='49'>Hook.Hook.quitBrowser()</a>
+<div class="">
+<span class="badge badge-default">Web - Login.Web - Login Fail Scenarios.Hook.Hook.quitBrowser()</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.junit.ComparisonFailure</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.junit.ComparisonFailure</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:26:14 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='55'>Then YS User have fail message "Hatalı giriş." at Login Page</a>
+<div class="">
+<span class="badge badge-default">Web - Login.Web - Login Fail Scenarios with fail case for report.Then YS User have fail message "Hatalı giriş." at Login Page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@14e9bb345ef7e2ed3a102f271d84e9f0267c88e7/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

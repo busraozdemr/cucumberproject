@@ -1,0 +1,6 @@
+stepdefinitions/myfavorite/MyFavoriteSteps.class
+pages/myfavorite/MyFavoritePage.class
+Runner/Runner.class
+stepdefinitions/login/LoginSteps.class
+pages/login/LoginPage.class
+Hook/Hook.class
