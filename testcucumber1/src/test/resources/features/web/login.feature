@@ -28,6 +28,6 @@ Feature: Web - Login
   Scenario: Web - Login Fail Scenarios with fail case for report
     Given YS User open the Login Page
     And YS User try to login
-      | username   | password   |
-      | <username> | <password> |
+      | username | password |
+      | testfail | B.c.1993 |
     Then YS User have fail message "Hatalı giriş." at Login Page

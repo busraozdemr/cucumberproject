@@ -47,7 +47,7 @@ public class MyFavoritePage extends ElementUtils {
     }
 
     public void clickAddedMyFavorite() {
-        waitForPageToCompleteState(getDriver());
+        visibilityOfElement(ADDED_MY_FAVORITE_BUTTON);
         onClick(ADDED_MY_FAVORITE_BUTTON);
     }
 
