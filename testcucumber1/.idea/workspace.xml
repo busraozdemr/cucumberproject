@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0326b55b-06c2-4573-a26a-df3ab085224c" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1necRaVYBYa5F6bbLfHa2SiJEgS" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="pages" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources/features" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pages" />
+      <recent name="stepdefinitions" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+      <recent name="$PROJECT_DIR$/src/test/resources/features/selleroffice" />
+      <recent name="$PROJECT_DIR$/src/test/resources/features/backoffice" />
+      <recent name="$PROJECT_DIR$/src/test/resources/features" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Cucumber java.Scenario: AddedFavoriteRestaurant - Added Favorite Restaurant Success">
+    <configuration name="Scenario: AddedFavoriteRestaurant - Added Favorite Restaurant Success" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/my_favorite_restaurant/added_my_favorite_restaurant.feature" />
+      <option name="GLUE" value="Hook stepdefinitions.login stepdefinitions.myfavorite" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="testcucumber1" />
+      <option name="NAME_FILTER" value="^AddedFavoriteRestaurant \- Added Favorite Restaurant Success$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^AddedFavoriteRestaurant \- Added Favorite Restaurant Success$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: AddedFavoriteRestaurant - Added Favorite Restaurant Success" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Login - Should login to Backoffice" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/backoffice/backoffice_login.feature" />
+      <option name="GLUE" value="Hook stepdefinitions.backoffice" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="testcucumber1" />
+      <option name="NAME_FILTER" value="^Login \- Should login to Backoffice$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Login \- Should login to Backoffice$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Login - Should login to Backoffice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Web - Login Fail Scenario" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/web/login.feature" />
+      <option name="GLUE" value="Hook stepdefinitions.login" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="testcucumber1" />
+      <option name="NAME_FILTER" value="^Web \- Login Fail Scenario$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Web \- Login Fail Scenario$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Web - Login Fail Scenario" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Web - Login Fail Scenarios" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/web/login.feature" />
+      <option name="GLUE" value="Hook stepdefinitions.login" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="testcucumber1" />
+      <option name="NAME_FILTER" value="^Web \- Login Fail Scenarios$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Web \- Login Fail Scenarios$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Web - Login Fail Scenarios" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Web - Login Success Scenario" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/web/login.feature" />
+      <option name="GLUE" value="Hook stepdefinitions.login" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="testcucumber1" />
+      <option name="NAME_FILTER" value="^Web \- Login Success Scenario$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Web \- Login Success Scenario$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Web - Login Success Scenario" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Cucumber java.Scenario: AddedFavoriteRestaurant - Added Favorite Restaurant Success" />
+        <item itemvalue="Cucumber java.Scenario: Web - Login Success Scenario" />
+        <item itemvalue="Cucumber java.Scenario: Web - Login Fail Scenarios" />
+        <item itemvalue="Cucumber java.Scenario: Web - Login Fail Scenario" />
+        <item itemvalue="Cucumber java.Scenario: Login - Should login to Backoffice" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0326b55b-06c2-4573-a26a-df3ab085224c" name="Default Changelist" comment="" />
+      <created>1611753989980</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1611753989980</updated>
+      <workItem from="1611753993092" duration="19782000" />
+      <workItem from="1611827597335" duration="6406000" />
+      <workItem from="1611843250671" duration="134000" />
+      <workItem from="1611855332463" duration="3887000" />
+      <workItem from="1612099402300" duration="1230000" />
+      <workItem from="1615464131016" duration="64000" />
+      <workItem from="1615464423372" duration="233000" />
+      <workItem from="1615474013505" duration="258000" />
+      <workItem from="1615474430822" duration="1269000" />
+      <workItem from="1616062483657" duration="186000" />
+      <workItem from="1617457121147" duration="599000" />
+      <workItem from="1617458020338" duration="29000" />
+      <workItem from="1620033662043" duration="319000" />
+      <workItem from="1620369460361" duration="16000" />
+      <workItem from="1623693468697" duration="6118000" />
+      <workItem from="1623759263706" duration="3459000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="338" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1623696560588">
+      <screen x="0" y="23" width="1680" height="990" />
+    </state>
+    <state x="338" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1680.990@0.23.1680.990" timestamp="1623696560588" />
+    <state x="618" y="227" width="872" height="579" key="#xdebugger.evaluate" timestamp="1623751951953">
+      <screen x="0" y="23" width="1680" height="990" />
+    </state>
+    <state x="618" y="227" width="872" height="579" key="#xdebugger.evaluate/0.23.1680.990@0.23.1680.990" timestamp="1623751951953" />
+    <state width="1607" height="241" key="GridCell.Tab.0.bottom" timestamp="1623767947207">
+      <screen x="0" y="23" width="1680" height="990" />
+    </state>
+    <state width="1607" height="241" key="GridCell.Tab.0.bottom/0.23.1680.990@0.23.1680.990" timestamp="1623767947207" />
+    <state width="1607" height="241" key="GridCell.Tab.0.center" timestamp="1623767947206">
+      <screen x="0" y="23" width="1680" height="990" />
+    </state>
+    <state width="1607" height="241" key="GridCell.Tab.0.center/0.23.1680.990@0.23.1680.990" timestamp="1623767947206" />
+    <state width="1607" height="241" key="GridCell.Tab.0.left" timestamp="1623767947205">
+      <screen x="0" y="23" width="1680" height="990" />
+    </state>
+    <state width="1607" height="241" key="GridCell.Tab.0.left/0.23.1680.990@0.23.1680.990" timestamp="1623767947205" />
+    <state width="1607" height="241" key="GridCell.Tab.0.right" timestamp="1623767947206">
+      <screen x="0" y="23" width="1680" height="990" />
+    </state>
+    <state width="1607" height="241" key="GridCell.Tab.0.right/0.23.1680.990@0.23.1680.990" timestamp="1623767947206" />
+    <state width="1607" height="241" key="GridCell.Tab.1.bottom" timestamp="1623767947209">
+      <screen x="0" y="23" width="1680" height="990" />
+    </state>
+    <state width="1607" height="241" key="GridCell.Tab.1.bottom/0.23.1680.990@0.23.1680.990" timestamp="1623767947209" />
+    <state width="1607" height="241" key="GridCell.Tab.1.center" timestamp="1623767947208">
+      <screen x="0" y="23" width="1680" height="990" />
+    </state>
+    <state width="1607" height="241" key="GridCell.Tab.1.center/0.23.1680.990@0.23.1680.990" timestamp="1623767947208" />
+    <state width="1607" height="241" key="GridCell.Tab.1.left" timestamp="1623767947207">
+      <screen x="0" y="23" width="1680" height="990" />
+    </state>
+    <state width="1607" height="241" key="GridCell.Tab.1.left/0.23.1680.990@0.23.1680.990" timestamp="1623767947207" />
+    <state width="1607" height="241" key="GridCell.Tab.1.right" timestamp="1623767947208">
+      <screen x="0" y="23" width="1680" height="990" />
+    </state>
+    <state width="1607" height="241" key="GridCell.Tab.1.right/0.23.1680.990@0.23.1680.990" timestamp="1623767947208" />
+    <state x="708" y="327" key="com.intellij.ide.util.TipDialog" timestamp="1623762328650">
+      <screen x="0" y="23" width="1680" height="990" />
+    </state>
+    <state x="708" y="327" key="com.intellij.ide.util.TipDialog/0.23.1680.989@0.23.1680.989" timestamp="1617458046384" />
+    <state x="708" y="327" key="com.intellij.ide.util.TipDialog/0.23.1680.990@0.23.1680.990" timestamp="1623762328650" />
+    <state x="407" y="259" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1623766156292">
+      <screen x="0" y="23" width="1680" height="990" />
+    </state>
+    <state x="407" y="259" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.23.1680.990@0.23.1680.990" timestamp="1623766156292" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/pages/myfavorite/MyFavoritePage.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/stepdefinitions/myfavorite/MyFavoriteSteps.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/pages/myfavorite/MyFavoritePage.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/pages/myfavorite/MyFavoritePage.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/pages/myfavorite/MyFavoritePage.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
